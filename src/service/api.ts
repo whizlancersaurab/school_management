@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const baseUrl: string = '/api'
-export const Imageurl = `http://localhost:3004/api/stu/uploads/image/`
-export const Documenturl = `http://localhost:3004/api/stu/uploads/document/`
+export const Imageurl = `https://school-management-crm-l2um.onrender.com/api/stu/uploads/image/`
+export const Documenturl = `https://school-management-crm-l2um.onrender.com/api/stu/uploads/document/`
 
 export const api = axios.create({
     baseURL: baseUrl,

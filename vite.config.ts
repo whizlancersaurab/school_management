@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
  server:{
   proxy:{
-    '/api':'http://localhost:3004'
+    '/api':'https://school-management-crm-l2um.onrender.com'
   }
  }
 })

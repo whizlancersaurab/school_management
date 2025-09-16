@@ -7,7 +7,7 @@ import StudentModals from '../studentModals'
 import CommonSelect from '../../../../core/common/commonSelect'
 import TooltipOption from '../../../../core/common/tooltipOption'
 import PredefinedDateRanges from '../../../../core/common/datePicker'
-import { allStudents } from '../../../../service/api'
+import { allStudents, Imageurl } from '../../../../service/api'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
@@ -363,7 +363,7 @@ const StudentGrid = () => {
                                 className="avatar avatar-lg flex-shrink-0"
                               >
                                 <img
-                                  src={`http://localhost:3004/api/stu/uploads/image/${student.stu_img}`}
+                                  src={`${Imageurl}/${student.stu_img}`}
                                   className="img-fluid rounded-circle"
                                   alt="img"
                                 />
