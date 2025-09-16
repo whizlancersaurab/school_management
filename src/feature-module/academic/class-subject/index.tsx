@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { classSubject } from "../../../core/data/json/class-subject";
+// import { classSubject } from "../../../core/data/json/class-subject";
 import Table from "../../../core/common/dataTable/index";
 import {
   count,

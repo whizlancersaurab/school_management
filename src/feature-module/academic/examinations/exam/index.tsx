@@ -218,7 +218,7 @@ const Exam = () => {
                     data-bs-target="#edit_exam"
                   >
                     <i className="ti ti-edit-circle me-2" />
-                    Edit
+                    Edit {text ? "" : ""}
                   </Link>
                 </li>
                 <li>
@@ -437,7 +437,7 @@ const Exam = () => {
                                 : null
                             }
                             placeholder="Select Date"
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleDateChange('examDate', Array.isArray(dateString) ? dateString[0] : dateString)
                             }
 

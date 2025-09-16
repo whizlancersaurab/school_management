@@ -10,7 +10,7 @@ import {
   marksUpto,
 } from "../../../../core/common/selectoption/selectoption";
 import Table from "../../../../core/common/dataTable/index";
-import { gradetable } from "../../../../core/data/json/grade";
+// import { gradetable } from "../../../../core/data/json/grade";
 import type { TableData } from "../../../../core/data/interface";
 import CommonSelect from "../../../../core/common/commonSelect";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
@@ -21,7 +21,7 @@ import { toast } from "react-toastify";
 import { handleModalPopUp } from "../../../../handlePopUpmodal";
 const Grade = () => {
   const routes = all_routes;
-  const data = gradetable;
+  // const data = gradetable;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {

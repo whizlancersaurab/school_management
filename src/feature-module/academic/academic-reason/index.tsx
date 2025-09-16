@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { AcademiReason } from "../../../core/data/json/academic_reason";
+// import { AcademiReason } from "../../../core/data/json/academic_reason";
 import Table from "../../../core/common/dataTable/index";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ import { handleModalPopUp } from "../../../handlePopUpmodal";
 const AcademicReason = () => {
   const routes = all_routes;
 
-  const data = AcademiReason;
+  // const data = AcademiReason;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
@@ -193,7 +193,7 @@ const AcademicReason = () => {
                   data-bs-target="#edit_reason"
                 >
                   <i className="ti ti-edit-circle me-2" />
-                  Edit
+                  Edit {text ? "" : ""}
                 </Link>
               </li>
               <li>

@@ -19,19 +19,19 @@ import TooltipOption from "../../../core/common/tooltipOption";
 import { getFeesCollectionDet, Imageurl } from "../../../service/api";
 import { toast } from "react-toastify";
 
-import FileSaver from "file-saver";
-import {
-  TableCell,
-  Paragraph,
-  TableRow,
-  Document,
-  Packer,
-  Table as DocxTable,
-  TextRun
-} from 'docx'
+// import FileSaver from "file-saver";
+// import {
+//   TableCell,
+//   Paragraph,
+//   TableRow,
+//   Document,
+//   Packer,
+//   Table as DocxTable,
+//   TextRun
+// } from 'docx'
 
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
+// import jsPDF from "jspdf";
+// import autoTable from "jspdf-autotable";
 
 
 
@@ -244,107 +244,107 @@ const CollectFees = () => {
   // ======================
   // Export to Word (.docx)
   // ======================
-  const exportToWord = () => {
-    const rows = tableData.map(
-      (item) =>
-        new TableRow({
-          children: [
-            new TableCell({ children: [new Paragraph(item.admNo)] }),
-            new TableCell({ children: [new Paragraph(item.rollNo)] }),
-            new TableCell({ children: [new Paragraph(item.student)] }),
-            new TableCell({ children: [new Paragraph(item.class)] }),
-            new TableCell({ children: [new Paragraph(item.section)] }),
-            new TableCell({ children: [new Paragraph(item.amount)] }),
-            new TableCell({ children: [new Paragraph(item.lastDate)] }),
-            new TableCell({ children: [new Paragraph(item.status)] }),
-          ],
-        })
-    );
+  // const exportToWord = () => {
+  //   const rows = tableData.map(
+  //     (item) =>
+  //       new TableRow({
+  //         children: [
+  //           new TableCell({ children: [new Paragraph(item.admNo)] }),
+  //           new TableCell({ children: [new Paragraph(item.rollNo)] }),
+  //           new TableCell({ children: [new Paragraph(item.student)] }),
+  //           new TableCell({ children: [new Paragraph(item.class)] }),
+  //           new TableCell({ children: [new Paragraph(item.section)] }),
+  //           new TableCell({ children: [new Paragraph(item.amount)] }),
+  //           new TableCell({ children: [new Paragraph(item.lastDate)] }),
+  //           new TableCell({ children: [new Paragraph(item.status)] }),
+  //         ],
+  //       })
+  //   );
 
-    const doc = new Document({
-      sections: [
+  //   const doc = new Document({
+  //     sections: [
 
-        {
+  //       {
 
-          children: [
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: "Fees Collection Report",
-                  bold: true,
-                  size: 28,
-                }),
-              ],
-            }),
-            new DocxTable({
-              rows: [
-                new TableRow({
-                  children: [
-                    new TableCell({ children: [new Paragraph("Adm No")] }),
-                    new TableCell({ children: [new Paragraph("Roll No")] }),
-                    new TableCell({ children: [new Paragraph("Student")] }),
-                    new TableCell({ children: [new Paragraph("Class")] }),
-                    new TableCell({ children: [new Paragraph("Section")] }),
-                    new TableCell({ children: [new Paragraph("Amount")] }),
-                    new TableCell({ children: [new Paragraph("Last Date")] }),
-                    new TableCell({ children: [new Paragraph("Status")] }),
-                  ],
-                }),
-                ...rows,
-              ],
-            }),
-          ],
-        },
-      ],
-    });
+  //         children: [
+  //           new Paragraph({
+  //             children: [
+  //               new TextRun({
+  //                 text: "Fees Collection Report",
+  //                 bold: true,
+  //                 size: 28,
+  //               }),
+  //             ],
+  //           }),
+  //           new DocxTable({
+  //             rows: [
+  //               new TableRow({
+  //                 children: [
+  //                   new TableCell({ children: [new Paragraph("Adm No")] }),
+  //                   new TableCell({ children: [new Paragraph("Roll No")] }),
+  //                   new TableCell({ children: [new Paragraph("Student")] }),
+  //                   new TableCell({ children: [new Paragraph("Class")] }),
+  //                   new TableCell({ children: [new Paragraph("Section")] }),
+  //                   new TableCell({ children: [new Paragraph("Amount")] }),
+  //                   new TableCell({ children: [new Paragraph("Last Date")] }),
+  //                   new TableCell({ children: [new Paragraph("Status")] }),
+  //                 ],
+  //               }),
+  //               ...rows,
+  //             ],
+  //           }),
+  //         ],
+  //       },
+  //     ],
+  //   });
 
-    Packer.toBlob(doc).then((blob: any) => {
-      FileSaver.saveAs(blob, "FeesCollection.docx");
-    });
-  };
+  //   Packer.toBlob(doc).then((blob: any) => {
+  //     FileSaver.saveAs(blob, "FeesCollection.docx");
+  //   });
+  // };
 
 
 
   // ======================
   // Export to PDF
   // ======================
-  const exportToPDF = () => {
-    const doc = new jsPDF();
+  // const exportToPDF = () => {
+  //   const doc = new jsPDF();
 
-    // Title
-    doc.setFontSize(18);
-    doc.text("Fees Collection Report", 14, 20);
+  //   // Title
+  //   doc.setFontSize(18);
+  //   doc.text("Fees Collection Report", 14, 20);
 
-    // Table headers
-    const headers = [
-      ["Adm No", "Roll No", "Student", "Class", "Section", "Amount", "Last Date", "Status"]
-    ];
+  //   // Table headers
+  //   const headers = [
+  //     ["Adm No", "Roll No", "Student", "Class", "Section", "Amount", "Last Date", "Status"]
+  //   ];
 
-    // Table rows from your data
-    const rows = tableData.map((item) => [
-      item.admNo,
-      item.rollNo,
-      item.student,
-      item.class,
-      item.section,
-      item.amount,
-      item.lastDate,
-      item.status,
-    ]);
+  //   // Table rows from your data
+  //   const rows = tableData.map((item) => [
+  //     item.admNo,
+  //     item.rollNo,
+  //     item.student,
+  //     item.class,
+  //     item.section,
+  //     item.amount,
+  //     item.lastDate,
+  //     item.status,
+  //   ]);
 
-    // AutoTable
-    autoTable(doc, {
-      head: headers,
-      body: rows,
-      startY: 30,
-      styles: { fontSize: 10 },
-      headStyles: { fillColor: [22, 160, 133] }, // green header
-    });
+  //   // AutoTable
+  //   autoTable(doc, {
+  //     head: headers,
+  //     body: rows,
+  //     startY: 30,
+  //     styles: { fontSize: 10 },
+  //     headStyles: { fillColor: [22, 160, 133] }, // green header
+  //   });
 
-    // Save
+  //   // Save
 
-    doc.save("FeesCollection.pdf");
-  };
+  //   doc.save("FeesCollection.pdf");
+  // };
 
 
 

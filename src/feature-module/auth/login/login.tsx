@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ImageWithBasePath from "../../../core/common/imageWithBasePath";
 import { Link, useNavigate } from "react-router-dom";
 import { all_routes } from "../../router/all_routes";
-import Password from "antd/es/input/Password";
+// import Password from "antd/es/input/Password";
 import { login } from "../../../service/api";
 import { toast } from "react-toastify";
 import { jwtDecode} from "jwt-decode";

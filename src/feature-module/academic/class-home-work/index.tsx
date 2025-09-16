@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { classhomework } from "../../../core/data/json/class_home_work";
+// import { classhomework } from "../../../core/data/json/class_home_work";
 import Table from "../../../core/common/dataTable/index";
 import {
   allClass,
@@ -24,7 +24,7 @@ import { handleModalPopUp } from "../../../handlePopUpmodal";
 const ClassHomeWork = () => {
   const routes = all_routes;
 
-  const data = classhomework;
+  // const data = classhomework;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
@@ -175,7 +175,7 @@ const ClassHomeWork = () => {
     {
       title: "ID",
       dataIndex: "id",
-      render: (text: number, record: any) => (
+      render: (text: number) => (
         <>
           <Link to="#" className="link-primary">
             {text}
@@ -546,7 +546,7 @@ const ClassHomeWork = () => {
                                     : null
                                 }
                                 placeholder="Select Date"
-                                onChange={(date, dateString) =>
+                                onChange={(dateString) =>
                                   handleDateChange("homeworkDate", Array.isArray(dateString) ? dateString[0] : dateString)
                                 }
                               />
@@ -569,7 +569,7 @@ const ClassHomeWork = () => {
                                     : null
                                 }
                                 placeholder="Select Date"
-                                onChange={(date, dateString) =>
+                                onChange={(dateString) =>
                                   handleDateChange("submissionDate", Array.isArray(dateString) ? dateString[0] : dateString)
                                 }
                               />

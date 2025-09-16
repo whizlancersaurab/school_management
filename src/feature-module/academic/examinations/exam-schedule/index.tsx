@@ -16,7 +16,7 @@ import {
 } from "../../../../core/common/selectoption/selectoption";
 import { Link } from "react-router-dom";
 import Table from "../../../../core/common/dataTable/index";
-import { examSchedule } from "../../../../core/data/json/exam_schedule";
+// import { examSchedule } from "../../../../core/data/json/exam_schedule";
 import type { TableData } from "../../../../core/data/interface";
 import CommonSelect from "../../../../core/common/commonSelect";
 import { all_routes } from "../../../router/all_routes";
@@ -27,22 +27,22 @@ import { handleModalPopUp } from "../../../../handlePopUpmodal";
 
 const ExamSchedule = () => {
   const routes = all_routes;
-  const data = examSchedule;
+  // const data = examSchedule;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
       dropdownMenuRef.current.classList.remove("show");
     }
   };
-  const [newContents, setNewContents] = useState<number[]>([0]);
+  // const [newContents, setNewContents] = useState<number[]>([0]);
 
-  const addNewContent = () => {
-    setNewContents([...newContents, newContents.length]);
-  };
+  // const addNewContent = () => {
+  //   setNewContents([...newContents, newContents.length]);
+  // };
 
-  const removeContent = (index: any) => {
-    setNewContents(newContents.filter((_, i) => i !== index));
-  };
+  // const removeContent = (index: any) => {
+  //   setNewContents(newContents.filter((_, i) => i !== index));
+  // };
 
 
 

@@ -4,7 +4,7 @@ import { all_routes } from "../../router/all_routes";
 import ImageWithBasePath from "../../../core/common/imageWithBasePath";
 import { resetPassword } from "../../../service/api";
 import { toast } from "react-toastify";
-import { Toast } from "react-bootstrap";
+// import { Toast } from "react-bootstrap";
 
 type PasswordField = "otp" | "newPassword" | "confirmPassword";
 

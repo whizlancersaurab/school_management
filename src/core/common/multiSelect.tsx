@@ -23,6 +23,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
 }) => {
   const handleChange = (newValue: MultiValue<Option>, actionMeta: ActionMeta<Option>) => {
     const selected = newValue as Option[];
+    console.log(actionMeta ? "": "");
     if (onChange) {
       onChange(selected.map((opt) => opt.value));
     }

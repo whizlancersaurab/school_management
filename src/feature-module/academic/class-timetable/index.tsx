@@ -6,7 +6,7 @@ import {
   classSylabus,
   language,
   // period,
-  routinename,
+  // routinename,
   // subjectGroup,
   teacher,
   Time,
@@ -17,7 +17,8 @@ import CommonSelect from "../../../core/common/commonSelect";
 import { Link } from "react-router-dom";
 import { all_routes } from "../../router/all_routes";
 import TooltipOption from "../../../core/common/tooltipOption";
-import { addTimeTable, allTeacherForOption, getTimeTable } from "../../../service/api";
+import { addTimeTable, getTimeTable } from "../../../service/api";
+// allTeacherForOption
 import { toast } from "react-toastify";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -33,40 +34,40 @@ const ClassTimetable = () => {
     }
   };
   const [newContents, setNewContents] = useState<number[]>([0]);
-  const [tuesdayContents, settuesdayContents] = useState<number[]>([0]);
-  const [wednessdayContents, setwednessdayContents] = useState<number[]>([0]);
-  const [thursdayContents, setthursdayContents] = useState<number[]>([0]);
-  const [fridayContents, setfridayContents] = useState<number[]>([0]);
+  // const [tuesdayContents, settuesdayContents] = useState<number[]>([0]);
+  // const [wednessdayContents, setwednessdayContents] = useState<number[]>([0]);
+  // const [thursdayContents, setthursdayContents] = useState<number[]>([0]);
+  // const [fridayContents, setfridayContents] = useState<number[]>([0]);
   const addNewContent = () => {
     setNewContents([...newContents, newContents.length]);
   };
-  const addTuesdayContent = () => {
-    settuesdayContents([...tuesdayContents, tuesdayContents.length]);
-  };
-  const addwednessdayContent = () => {
-    setwednessdayContents([...wednessdayContents, wednessdayContents.length]);
-  };
-  const addthursdayContents = () => {
-    setthursdayContents([...thursdayContents, thursdayContents.length]);
-  };
-  const addfridayContents = () => {
-    setfridayContents([...fridayContents, fridayContents.length]);
-  };
-  const removeContent = (index: any) => {
-    setNewContents(newContents.filter((_, i) => i !== index));
-  };
-  const removetuesdayContent = (index: any) => {
-    settuesdayContents(tuesdayContents.filter((_, i) => i !== index));
-  };
-  const removewednessdayContent = (index: any) => {
-    setwednessdayContents(wednessdayContents.filter((_, i) => i !== index));
-  };
-  const removethursdayContents = (index: any) => {
-    setthursdayContents(thursdayContents.filter((_, i) => i !== index));
-  };
-  const removefridayContents = (index: any) => {
-    setfridayContents(fridayContents.filter((_, i) => i !== index));
-  };
+  // const addTuesdayContent = () => {
+  //   settuesdayContents([...tuesdayContents, tuesdayContents.length]);
+  // };
+  // const addwednessdayContent = () => {
+  //   setwednessdayContents([...wednessdayContents, wednessdayContents.length]);
+  // };
+  // const addthursdayContents = () => {
+  //   setthursdayContents([...thursdayContents, thursdayContents.length]);
+  // };
+  // const addfridayContents = () => {
+  //   setfridayContents([...fridayContents, fridayContents.length]);
+  // };
+  // const removeContent = (index: any) => {
+  //   setNewContents(newContents.filter((_, i) => i !== index));
+  // };
+  // const removetuesdayContent = (index: any) => {
+  //   settuesdayContents(tuesdayContents.filter((_, i) => i !== index));
+  // };
+  // const removewednessdayContent = (index: any) => {
+  //   setwednessdayContents(wednessdayContents.filter((_, i) => i !== index));
+  // };
+  // const removethursdayContents = (index: any) => {
+  //   setthursdayContents(thursdayContents.filter((_, i) => i !== index));
+  // };
+  // const removefridayContents = (index: any) => {
+  //   setfridayContents(fridayContents.filter((_, i) => i !== index));
+  // };
 
 // future me eski jarurat padegi tn use karenge 
 
@@ -538,7 +539,7 @@ const ClassTimetable = () => {
                                   </div>
                                   {newContents.length > 1 && (
                                     <div className="mb-3 ms-2">
-                                      <Link to="#" className="delete-time-table" onClick={() => removeContent(index)}>
+                                      <Link to="#" className="delete-time-table">
                                         <i className="ti ti-trash" />
                                       </Link>
                                     </div>

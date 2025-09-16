@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import PredefinedDateRanges from "../../../core/common/datePicker";
 import CommonSelect from "../../../core/common/commonSelect";
 import {
-  AdmissionNumber,
+  // AdmissionNumber,
   classSection,
-  RollNumber,
+  // RollNumber,
   studentclass,
-  studentName,
+  // studentName,
 } from "../../../core/common/selectoption/selectoption";
 import Table from "../../../core/common/dataTable/index";
 import { Link } from "react-router-dom";

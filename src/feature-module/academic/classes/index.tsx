@@ -13,7 +13,8 @@ import type { TableData } from "../../../core/data/interface";
 import { Link } from "react-router-dom";
 import TooltipOption from "../../../core/common/tooltipOption";
 import { all_routes } from "../../router/all_routes";
-import { addClass, allClasses } from "../../../service/classApi";
+import { addClass } from "../../../service/classApi";
+// allClasses
 import { toast } from "react-toastify";
 import { handleModalPopUp } from "../../../handlePopUpmodal";
 
@@ -29,21 +30,21 @@ const Classes = () => {
   };
   const route = all_routes
 
-  const [classList , setClassList] = useState<any>([])
-  const [loading ,setLoading] = useState<boolean>(false)
+  // const [classList , setClassList] = useState<any>([])
+  // const [loading ,setLoading] = useState<boolean>(false)
 
-  const fetchClasses = async()=>{
-      setLoading(true)
-    try {
-       const {data} = await allClasses()
-       if(data.success){
-        setClassList(data.data)
-       }
+  // const fetchClasses = async()=>{
+  //     setLoading(true)
+  //   try {
+  //      const {data} = await allClasses()
+  //      if(data.success){
+  //       setClassList(data.data)
+  //      }
 
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
 
 
   const columns = [

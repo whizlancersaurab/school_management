@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { leave } from "../../../../core/data/json/list_leaves";
+// import { leave } from "../../../../core/data/json/list_leaves";
 import type { TableData } from "../../../../core/data/interface";
 import Table from "../../../../core/common/dataTable/index";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
@@ -13,7 +13,7 @@ import { toast } from "react-toastify";
 
 const ListLeaves = () => {
   const routes = all_routes;
-  const data = leave;
+  // const data = leave;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
