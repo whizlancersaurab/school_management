@@ -165,7 +165,7 @@ const TeacherModal = () => {
                       <CommonSelect
                         className="select"
                         options={leaveType}
-                        defaultValue={leaveType[0]}
+                        defaultValue={leaveType[0].value}
                       />
                     </div>
                     <div className="mb-3">

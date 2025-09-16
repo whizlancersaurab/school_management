@@ -195,7 +195,7 @@ const SportsList = () => {
                               <CommonSelect
                                 className="select"
                                 options={coachName}
-                                defaultValue={coachName[0]}
+                                // defaultValue={coachName[0]}
                               />
                             </div>
                           </div>
@@ -205,7 +205,7 @@ const SportsList = () => {
                               <CommonSelect
                                 className="select"
                                 options={moreFilterSport}
-                                defaultValue={moreFilterSport[0]}
+                                // defaultValue={moreFilterSport[0]}
                               />
                             </div>
                           </div>

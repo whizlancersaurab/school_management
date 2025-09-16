@@ -301,7 +301,7 @@ const Books = () => {
                               <CommonSelect
                                 className="select"
                                 options={allSubject}
-                                defaultValue={allSubject[0]}
+                                // defaultValue={allSubject[0]}
                               />
                             </div>
                           </div>
@@ -311,7 +311,7 @@ const Books = () => {
                               <CommonSelect
                                 className="select"
                                 options={moreFilterBook}
-                                defaultValue={moreFilterBook[0]}
+                                // defaultValue={moreFilterBook[0]}
                               />
                             </div>
                           </div>

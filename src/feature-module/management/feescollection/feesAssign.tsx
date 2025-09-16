@@ -7,7 +7,8 @@ import {
   allSection,
   cast,
 
-  category,
+  // category,
+
 
   gender,
 
@@ -15,18 +16,18 @@ import {
 import type { TableData } from "../../../core/data/interface";
 import Table from "../../../core/common/dataTable/index";
 import AssignModal from "./assignModal";
-import { assignFeesData } from "../../../core/data/json/assignFeesData";
+// import { assignFeesData } from "../../../core/data/json/assignFeesData";
 import TooltipOption from "../../../core/common/tooltipOption";
-import { feesAssignToStudents, getAllFeeAssignDetails } from "../../../service/api";
+import { getAllFeeAssignDetails } from "../../../service/api";
 import { toast } from "react-toastify";
-import FeesGroup from "./feesGroup";
-
+// import FeesGroup from "./feesGroup";
+//feesAssignToStudents
 const FeesAssign = () => {
   const routes = all_routes;
   const [editModal, setEditModal] = useState(false);
   const [addModal, setAddModal] = useState(false);
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
-  const data = assignFeesData;
+  // const data = assignFeesData;
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
       dropdownMenuRef.current.classList.remove("show");

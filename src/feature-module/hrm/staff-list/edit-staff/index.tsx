@@ -120,7 +120,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={staffrole}
-                                defaultValue={staffrole[0]}
+                                defaultValue={staffrole[0].value}
                               />
                             </div>
                           </div>
@@ -130,7 +130,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={staffDepartment}
-                                defaultValue={staffDepartment[0]}
+                                defaultValue={staffDepartment[0].value}
                               />
                             </div>
                           </div>
@@ -140,7 +140,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={staffrole}
-                                defaultValue={staffrole[0]}
+                                defaultValue={staffrole[0].value}
                               />
                             </div>
                           </div>
@@ -150,7 +150,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={gender}
-                                defaultValue={gender[1]}
+                                defaultValue={gender[1].value}
                               />
                             </div>
                           </div>
@@ -184,7 +184,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={bloodGroup}
-                                defaultValue={bloodGroup[0]}
+                                defaultValue={bloodGroup[0].value}
                               />
                             </div>
                           </div>
@@ -196,7 +196,7 @@ const EditStaff = () => {
                               <CommonSelect
                                 className="select"
                                 options={Marital}
-                                defaultValue={Marital[0]}
+                                defaultValue={Marital[0].value}
                               />
                             </div>
                           </div>
@@ -366,7 +366,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={Contract}
-                              defaultValue={Contract[0]}
+                              defaultValue={Contract[0].value}
                             />
                           </div>
                         </div>
@@ -376,7 +376,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={Shift}
-                              defaultValue={Shift[0]}
+                              defaultValue={Shift[0].value}
                             />
                           </div>
                         </div>
@@ -524,7 +524,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={route}
-                              defaultValue={route[0]}
+                              defaultValue={route[0].value}
                             />
                           </div>
                         </div>
@@ -534,7 +534,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={VehicleNumber}
-                              defaultValue={VehicleNumber[0]}
+                              defaultValue={VehicleNumber[0].value}
                             />
                           </div>
                         </div>
@@ -544,7 +544,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={PickupPoint}
-                              defaultValue={PickupPoint[0]}
+                              defaultValue={PickupPoint[0].value}
                             />
                           </div>
                         </div>
@@ -577,7 +577,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={Hostel}
-                              defaultValue={Hostel[0]}
+                              defaultValue={Hostel[0].value}
                             />
                           </div>
                         </div>
@@ -587,7 +587,7 @@ const EditStaff = () => {
                             <CommonSelect
                               className="select"
                               options={roomno}
-                              defaultValue={roomno[0]}
+                              defaultValue={roomno[0].value}
                             />
                           </div>
                         </div>

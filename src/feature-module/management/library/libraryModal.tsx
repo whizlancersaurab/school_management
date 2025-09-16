@@ -489,7 +489,7 @@ const LibraryModal: React.FC<Props> = ({ onAdd, deleteMemberId }) => {
                           }
                           placeholder="Select Date"
 
-                          onChange={(date, dateString) =>
+                          onChange={(dateString) =>
                             handleDateChange("date_of_join", Array.isArray(dateString) ? dateString[0] : dateString)
                           }
 
@@ -846,7 +846,7 @@ const LibraryModal: React.FC<Props> = ({ onAdd, deleteMemberId }) => {
                                 : null
                             }
                             placeholder="Select Date"
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleBookDateChange(
                                 "postDate",
                                 Array.isArray(dateString) ? dateString[0] : dateString
@@ -1096,7 +1096,7 @@ const LibraryModal: React.FC<Props> = ({ onAdd, deleteMemberId }) => {
                             format="DD MMM YYYY"
                             value={issueBookForm.issueDate ? dayjs(issueBookForm.issueDate, "DD MMM YYYY") : null}
                             placeholder="Select Date"
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleIssueBookDateChange(
                                 "issueDate",
                                 Array.isArray(dateString) ? dateString[0] : dateString
@@ -1117,7 +1117,7 @@ const LibraryModal: React.FC<Props> = ({ onAdd, deleteMemberId }) => {
                             format="DD MMM YYYY"
                             value={issueBookForm.lastDate ? dayjs(issueBookForm.lastDate, "DD MMM YYYY") : null}
                             placeholder="Select Date"
-                            onChange={(date, dateString) =>
+                            onChange={( dateString) =>
                               handleIssueBookDateChange(
                                 "lastDate",
                                 Array.isArray(dateString) ? dateString[0] : dateString

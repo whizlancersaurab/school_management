@@ -9,7 +9,7 @@ export type Option = {
 export interface SelectProps {
   options: Option[];
   value?: string | number;         // parent se aane wala selected value
-  defaultValue?: string | number;  // optional default
+  defaultValue?: string | number | {};  // optional default
   className?: string;
   styles?: any;
   onChange?: (value: Option | null) => void;

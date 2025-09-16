@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PredefinedDateRanges from "../../../core/common/datePicker";
 import CommonSelect from "../../../core/common/commonSelect";
 import {
-  amount,
+  // amount,
   DueDate,
   feeGroup,
   feesTypes,
@@ -12,7 +12,7 @@ import {
   ids,
   status,
 } from "../../../core/common/selectoption/selectoption";
-import type { TableData } from "../../../core/data/interface";
+// import type { TableData } from "../../../core/data/interface";
 import Table from "../../../core/common/dataTable/index";
 import FeesModal from "./feesModal";
 // import { feesMasterData } from "../../../core/data/json/feesMaster";
@@ -72,7 +72,7 @@ const FeesMaster = () => {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const [year, month, day] = dateStr.split("-");
-    return `${day} ${months[month - 1]} ${year}`;
+    return `${day} ${months[parseInt(month) - 1]} ${year}`;
   }
 
   // Map for table

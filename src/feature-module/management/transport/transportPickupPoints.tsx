@@ -199,7 +199,7 @@ const TransportPickupPoints = () => {
                               <CommonSelect
                                 className="select"
                                 options={status}
-                                defaultValue={status[0]}
+                                // defaultValue={status[0]}
                               />
                             </div>
                           </div>

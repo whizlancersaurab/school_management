@@ -169,7 +169,7 @@ const ReturnBook = () => {
             data-bs-toggle="modal"
             data-bs-target="#book_details"
           >
-            View Details
+            View Details{text == undefined ? "": ""}
           </Link>
           <button data-bs-toggle="modal"
             data-bs-target="#return_book"
@@ -344,7 +344,7 @@ const ReturnBook = () => {
                               <CommonSelect
                                 className="select"
                                 options={names}
-                                defaultValue={names[0]}
+                                // defaultValue={names[0]}
                               />
                             </div>
                           </div>
@@ -354,7 +354,7 @@ const ReturnBook = () => {
                               <CommonSelect
                                 className="select"
                                 options={moreFilterBookIssue}
-                                defaultValue={moreFilterBookIssue[0]}
+                                // defaultValue={moreFilterBookIssue[0]}
                               />
                             </div>
                           </div>

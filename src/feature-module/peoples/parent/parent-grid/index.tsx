@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
+// import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
 import ParentModal from "../parentModal";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
 import { Link } from "react-router-dom";
@@ -209,7 +209,7 @@ const ParentGrid = () => {
                             <CommonSelect
                               className="select"
                               options={parent}
-                              defaultValue={parent[0]}
+                              // defaultValue={parent[0]}
                             />
                           </div>
                         </div>
@@ -219,7 +219,7 @@ const ParentGrid = () => {
                             <CommonSelect
                               className="select"
                               options={names}
-                              defaultValue={names[0]}
+                              // defaultValue={names[0]}
                             />
                           </div>
                         </div>

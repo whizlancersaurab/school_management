@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
+// import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
 import { Link } from "react-router-dom";
 import { all_routes } from "../../../router/all_routes";
@@ -207,7 +207,7 @@ const GuardianGrid = () => {
                             <CommonSelect
                               className="select"
                               options={parent}
-                              defaultValue={parent[0]}
+                              // defaultValue={parent[0]}
                             />
                           </div>
                         </div>
@@ -217,7 +217,7 @@ const GuardianGrid = () => {
                             <CommonSelect
                               className="select"
                               options={names}
-                              defaultValue={names[0]}
+                              // defaultValue={names[0]}
                             />
                           </div>
                         </div>

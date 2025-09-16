@@ -14,7 +14,7 @@ import { Modal } from "react-bootstrap";
 import GuardianModal from "../guardianModal";
 import type { TableData } from "../../../../core/data/interface";
 import Table from "../../../../core/common/dataTable/index";
-import { guardianListData } from "../../../../core/data/json/guardianList";
+// import { guardianListData } from "../../../../core/data/json/guardianList";
 import TooltipOption from "../../../../core/common/tooltipOption";
 import { allGuardians, Imageurl, speGuardian } from "../../../../service/api";
 import { toast } from "react-toastify";
@@ -32,7 +32,7 @@ const GuardianList = () => {
   const handleClose = () => {
     setShow(false);
   };
-  const data = guardianListData;
+  // const data = guardianListData;
 
   interface GuaData {
     id: number;
@@ -360,7 +360,7 @@ const GuardianList = () => {
                               <CommonSelect
                                 className="select"
                                 options={parent}
-                                defaultValue={parent[0]}
+                                // defaultValue={parent[0]}
                               />
                             </div>
                           </div>
@@ -370,7 +370,7 @@ const GuardianList = () => {
                               <CommonSelect
                                 className="select"
                                 options={names}
-                                defaultValue={names[0]}
+                                // defaultValue={names[0]}
                               />
                             </div>
                           </div>
@@ -380,7 +380,7 @@ const GuardianList = () => {
                               <CommonSelect
                                 className="select"
                                 options={allClass}
-                                defaultValue={allClass[0]}
+                                // defaultValue={allClass[0]}
                               />
                             </div>
                           </div>
@@ -390,7 +390,7 @@ const GuardianList = () => {
                               <CommonSelect
                                 className="select"
                                 options={status}
-                                defaultValue={status[0]}
+                                // defaultValue={status[0]}
                               />
                             </div>
                           </div>

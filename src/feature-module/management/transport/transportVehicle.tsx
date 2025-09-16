@@ -264,7 +264,7 @@ const TransportVehicle = () => {
                               <CommonSelect
                                 className="select"
                                 options={vehicleModel}
-                                defaultValue={vehicleModel[0]}
+                                // defaultValue={vehicleModel[0]}
                               />
                             </div>
                           </div>
@@ -274,7 +274,7 @@ const TransportVehicle = () => {
                               <CommonSelect
                                 className="select"
                                 options={driverName}
-                                defaultValue={driverName[0]}
+                                // defaultValue={driverName[0]}
                               />
                             </div>
                           </div>
@@ -304,7 +304,7 @@ const TransportVehicle = () => {
                               <CommonSelect
                                 className="select"
                                 options={status}
-                                defaultValue={status[0]}
+                                // defaultValue={status[0]}
                               />
                             </div>
                           </div>
@@ -314,7 +314,7 @@ const TransportVehicle = () => {
                               <CommonSelect
                                 className="select"
                                 options={driverFilter2}
-                                defaultValue={driverFilter2[0]}
+                                // defaultValue={driverFilter2[0]}
                               />
                             </div>
                           </div>

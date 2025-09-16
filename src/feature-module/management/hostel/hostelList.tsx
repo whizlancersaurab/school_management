@@ -194,7 +194,7 @@ const HostelList = () => {
                               <CommonSelect
                                 className="select"
                                 options={hostelType}
-                                defaultValue={hostelType[0]}
+                                defaultValue={hostelType[0].value}
                               />
                             </div>
                           </div>
@@ -204,7 +204,7 @@ const HostelList = () => {
                               <CommonSelect
                                 className="select"
                                 options={moreFilterHostel}
-                                defaultValue={moreFilterHostel[0]}
+                                defaultValue={moreFilterHostel[0].value}
                               />
                             </div>
                           </div>

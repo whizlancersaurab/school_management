@@ -13,7 +13,7 @@ import {
 import type { TableData } from "../../../core/data/interface";
 import Table from "../../../core/common/dataTable/index";
 import FeesModal from "./feesModal";
-import { feesType } from "../../../core/data/json/feesType";
+// import { feesType } from "../../../core/data/json/feesType";
 import TooltipOption from "../../../core/common/tooltipOption";
 import { toast } from "react-toastify";
 import { allFeesTypeName } from "../../../service/api";
@@ -21,7 +21,7 @@ import { allFeesTypeName } from "../../../service/api";
 const FeesTypes = () => {
   const routes = all_routes;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
-  const data = feesType;
+  // const data = feesType;
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
       dropdownMenuRef.current.classList.remove("show");
@@ -257,7 +257,7 @@ interface FessTypeName {
                               <CommonSelect
                                 className="select"
                                 options={ids}
-                                defaultValue={ids[0]}
+                                defaultValue={ids[0].value}
                               />
                             </div>
                           </div>
@@ -267,7 +267,7 @@ interface FessTypeName {
                               <CommonSelect
                                 className="select"
                                 options={names}
-                                defaultValue={names[0]}
+                                defaultValue={names[0].value}
                               />
                             </div>
                           </div>
@@ -277,7 +277,7 @@ interface FessTypeName {
                               <CommonSelect
                                 className="select"
                                 options={feeGroup}
-                                defaultValue={feeGroup[0]}
+                                defaultValue={feeGroup[0].value}
                               />
                             </div>
                           </div>
@@ -287,7 +287,7 @@ interface FessTypeName {
                               <CommonSelect
                                 className="select"
                                 options={feesTypes}
-                                defaultValue={feesTypes[0]}
+                                defaultValue={feesTypes[0].value}
                               />
                             </div>
                           </div>
@@ -297,7 +297,7 @@ interface FessTypeName {
                               <CommonSelect
                                 className="select"
                                 options={status}
-                                defaultValue={status[0]}
+                                defaultValue={status[0].value}
                               />
                             </div>
                           </div>

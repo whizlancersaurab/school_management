@@ -124,7 +124,7 @@ const HostelModal = () => {
                         <CommonSelect
                           className="select"
                           options={roomtype}
-                          defaultValue={roomtype[0]}
+                          defaultValue={roomtype[0].value}
                         />
                       </div>
                       <div className="mb-3">
@@ -132,7 +132,7 @@ const HostelModal = () => {
                         <CommonSelect
                           className="select"
                           options={bedcount}
-                          defaultValue={bedcount[0]}
+                          defaultValue={bedcount[0].value}
                         />
                       </div>
                       <div className="mb-0">
@@ -395,7 +395,7 @@ const HostelModal = () => {
                       <CommonSelect
                         className="select"
                         options={hostelType}
-                        defaultValue={hostelType[0]}
+                        defaultValue={hostelType[0].value}
                       />
                     </div>
                     <div className="mb-3">

@@ -248,7 +248,7 @@ const TransportModal = () => {
                         <CommonSelect
                           className="select"
                           options={routesList}
-                          defaultValue={routesList[0]}
+                          // defaultValue={routesList[0]}
                         />
                       </div>
                       <div className="mb-3">
@@ -258,7 +258,7 @@ const TransportModal = () => {
                         <CommonSelect
                           className="select"
                           options={PickupPoint2}
-                          defaultValue={PickupPoint2[0]}
+                          // defaultValue={PickupPoint2[0]}
                         />
                       </div>
                       <div className="mb-3">
@@ -266,7 +266,7 @@ const TransportModal = () => {
                         <CommonSelect
                           className="select"
                           options={VehicleNumber}
-                          defaultValue={VehicleNumber[0]}
+                          // defaultValue={VehicleNumber[0]}
                         />
                       </div>
                       <div className="assigned-driver">
@@ -873,7 +873,7 @@ const TransportModal = () => {
                         <CommonSelect
                           className="select"
                           options={driverName}
-                          defaultValue={driverName[1]}
+                          // defaultValue={driverName[1]}
                         />
                       </div>
                       <div className="row">

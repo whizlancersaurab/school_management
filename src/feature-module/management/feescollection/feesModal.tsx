@@ -27,10 +27,10 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
     const modalElement = document.getElementById('modal-datepicker');
     return modalElement ? modalElement : document.body; // Fallback to document.body if modalElement is null
   };
-  const getModalContainer2 = () => {
-    const modalElement = document.getElementById('modal-datepicker2');
-    return modalElement ? modalElement : document.body; // Fallback to document.body if modalElement is null
-  };
+  // const getModalContainer2 = () => {
+  //   const modalElement = document.getElementById('modal-datepicker2');
+  //   return modalElement ? modalElement : document.body; // Fallback to document.body if modalElement is null
+  // };
 
 
   //  add fees group 
@@ -112,6 +112,7 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
 
   const fetchBoathOptions = async () => {
     setLoading(true)
+    console.log(loading);
     try {
 
       const [feesGroup, feesType] = await Promise.all([allFeesGroupName(), allFeesTypeName()])
@@ -471,7 +472,7 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
                                     : null
                                 }
                                 placeholder="Select Date"
-                                onChange={(date, dateString) =>
+                                onChange={(dateString) =>
                                   handleFeesMasterDateChange(
                                     Array.isArray(dateString) ? dateString[0] : dateString
                                   )
@@ -683,7 +684,7 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
                         <CommonSelect
                           className="select"
                           options={feeGroup}
-                          defaultValue={feeGroup[1]}
+                          defaultValue={feeGroup[1].value}
                         />
                       </div>
                       <div className="mb-3">
@@ -691,7 +692,7 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
                         <CommonSelect
                           className="select"
                           options={feesTypes}
-                          defaultValue={feesTypes[1]}
+                          defaultValue={feesTypes[1].value}
                         />
                       </div>
                     </div>
@@ -963,7 +964,7 @@ const FeesModal: React.FC<Props> = ({ onAction }) => {
                         <CommonSelect
                           className="select"
                           options={feeGroup}
-                          defaultValue={feeGroup[1]}
+                          defaultValue={feeGroup[1].value}
                         />
                       </div>
                     </div>

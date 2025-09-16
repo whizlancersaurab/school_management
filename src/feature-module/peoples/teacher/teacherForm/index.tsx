@@ -541,7 +541,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={allClass}
-                              defaultValue={isEdit ? allClass[0] : undefined}
+                              defaultValue={isEdit ? allClass[0].value : undefined}
                               onChange={(option) => handleSelectChange("class", option ? option.value : "")}
                             />
                           </div>
@@ -553,7 +553,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={allSubject}
-                              defaultValue={isEdit ? allSubject[0] : undefined}
+                              defaultValue={isEdit ? allSubject[0].value : undefined}
                               onChange={(option) => handleSelectChange("subject", option ? option.value : "")}
                             />
                           </div>
@@ -565,7 +565,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={gender}
-                              defaultValue={isEdit ? gender[0] : undefined}
+                              defaultValue={isEdit ? gender[0].value : undefined}
                               onChange={(option) => handleSelectChange("gender", option ? option.value : "")}
                             />
                           </div>
@@ -603,7 +603,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={bloodGroup}
-                              defaultValue={isEdit ? bloodGroup[0] : undefined}
+                              defaultValue={isEdit ? bloodGroup[0].value : undefined}
                               onChange={(option) => handleSelectChange("blood_gp", option ? option.value : "")}
                             />
                           </div>
@@ -693,7 +693,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={Marital}
-                              defaultValue={isEdit ? Marital[0] : undefined}
+                              defaultValue={isEdit ? Marital[0].value : undefined}
                               onChange={(option) => handleSelectChange("mari_status", option ? option.value : "")}
                             />
                           </div>
@@ -818,7 +818,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={status}
-                              defaultValue={isEdit ? status[0] : undefined}
+                              defaultValue={isEdit ? status[0].value : undefined}
                               onChange={(option) => handleSelectChange("status", option ? option.value : "")}
                             />
                           </div>
@@ -887,7 +887,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={Contract}
-                              defaultValue={isEdit ? Contract[0] : undefined}
+                              defaultValue={isEdit ? Contract[0].value : undefined}
                               onChange={(option) => handleSelectChange("contract_type", option ? option.value : "")}
                             />
                           </div>
@@ -898,7 +898,7 @@ const TeacherForm = () => {
                             <CommonSelect
                               className="select"
                               options={Shift}
-                              defaultValue={isEdit ? Shift[0] : undefined}
+                              defaultValue={isEdit ? Shift[0].value : undefined}
                               onChange={(option) => handleSelectChange("work_sift", option ? option.value : "")}
                             />
                           </div>
@@ -1118,7 +1118,7 @@ const TeacherForm = () => {
                           <CommonSelect
                             className="select"
                             options={route}
-                            defaultValue={isEdit ? route[0] : undefined}
+                            defaultValue={isEdit ? route[0].value : undefined}
                             onChange={(option) => handleSelectChange("route", option ? option.value : "")}
                           />
                         </div>
@@ -1129,7 +1129,7 @@ const TeacherForm = () => {
                           <CommonSelect
                             className="select"
                             options={VehicleNumber}
-                            defaultValue={isEdit ? VehicleNumber[0] : undefined}
+                            defaultValue={isEdit ? VehicleNumber[0].value : undefined}
                             onChange={(option) => handleSelectChange("vehicle_num", option ? option.value : "")}
                           />
                         </div>
@@ -1140,7 +1140,7 @@ const TeacherForm = () => {
                           <CommonSelect
                             className="select"
                             options={PickupPoint}
-                            defaultValue={isEdit ? PickupPoint[0] : undefined}
+                            defaultValue={isEdit ? PickupPoint[0].value : undefined}
                             onChange={(option) => handleSelectChange("pickup_point", option ? option.value : "")}
                           />
                         </div>
@@ -1174,7 +1174,7 @@ const TeacherForm = () => {
                           <CommonSelect
                             className="select"
                             options={Hostel}
-                            defaultValue={isEdit ? Hostel[0] : undefined}
+                            defaultValue={isEdit ? Hostel[0].value : undefined}
                             onChange={(option) => handleSelectChange("hostel", option ? option.value : "")}
                           />
                         </div>
@@ -1185,7 +1185,7 @@ const TeacherForm = () => {
                           <CommonSelect
                             className="select"
                             options={roomNO}
-                            defaultValue={isEdit ? roomNO[0] : undefined}
+                            defaultValue={isEdit ? roomNO[0].value : undefined}
                             onChange={(option) => handleSelectChange("room_num", option ? option.value : "")}
                           />
                         </div>

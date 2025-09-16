@@ -13,15 +13,15 @@ import type { TableData } from "../../../core/data/interface";
 import Table from "../../../core/common/dataTable/index";
 import TooltipOption from "../../../core/common/tooltipOption";
 import LibraryModal from "./libraryModal";
-import { librarymemberList } from "../../../core/data/json/libraryMemberList";
-import ImageWithBasePath from "../../../core/common/imageWithBasePath";
+// import { librarymemberList } from "../../../core/data/json/libraryMemberList";
+// import ImageWithBasePath from "../../../core/common/imageWithBasePath";
 import { getAllLibraryMember } from "../../../service/api";
 import { toast } from "react-toastify";
 
 const LibraryMember = () => {
   const routes = all_routes;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
-  const data = librarymemberList;
+  // const data = librarymemberList;
   const handleApplyClick = () => {
     if (dropdownMenuRef.current) {
       dropdownMenuRef.current.classList.remove("show");
@@ -280,7 +280,7 @@ const LibraryMember = () => {
                               <CommonSelect
                                 className="select"
                                 options={cardNo}
-                                defaultValue={cardNo[0]}
+                                // defaultValue={cardNo[0]}
                               />
                             </div>
                           </div>
@@ -290,7 +290,7 @@ const LibraryMember = () => {
                               <CommonSelect
                                 className="select"
                                 options={moreFilter}
-                                defaultValue={moreFilter[0]}
+                                // defaultValue={moreFilter[0]}
                               />
                             </div>
                           </div>
