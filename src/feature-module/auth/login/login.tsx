@@ -128,12 +128,12 @@ const Login = () => {
 
           <div className="col-lg-6">
             <div className="login-background d-lg-flex align-items-center justify-content-center d-lg-block d-none flex-wrap vh-100 overflowy-auto">
-              <div>
+              {/* <div>
                 <ImageWithBasePath
                   src="assets/img/authentication/authentication-02.jpg"
                   alt=""
                 />
-              </div>
+              </div> */}
               <div className="authen-overlay-item  w-100 p-4">
                 <h4 className="text-white mb-3">What's New on Preskool !!!</h4>
                 <div className="d-flex align-items-center flex-row mb-3 justify-content-between p-3 br-5 gap-3 card">
