@@ -7,7 +7,7 @@ import { DatePicker} from 'antd'
 import dayjs from "dayjs";
 import CommonSelect from '../../../core/common/commonSelect'
 import React, { useEffect, useState } from 'react'
-import { addLeave, allFeesGroupName, allFeesTypeName, Imageurl, studentDetForFees, stuFeesSubmit } from '../../../service/api'
+import { addLeave, allFeesGroupName, allFeesTypeName, stuFeesSubmit } from '../../../service/api'
 import { toast } from 'react-toastify'
 
 type Props = {
@@ -18,16 +18,16 @@ type Props = {
 const StudentModals: React.FC<Props> = ({ rollnum, onAdd }) => {
 
   // const routes = all_routes
-  const today = new Date()
-  const year = today.getFullYear()
-  const month = String(today.getMonth() + 1).padStart(2, '0')
-  const day = String(today.getDate()).padStart(2, '0')
-  const formattedDate = `${month}-${day}-${year}`
-  const defaultValue = dayjs(formattedDate);
-  const getModalContainer = () => {
-    const modalElement = document.getElementById('modal-datepicker');
-    return modalElement ? modalElement : document.body;
-  };
+  // const today = new Date()
+  // const year = today.getFullYear()
+  // const month = String(today.getMonth() + 1).padStart(2, '0')
+  // const day = String(today.getDate()).padStart(2, '0')
+  // const formattedDate = `${month}-${day}-${year}`
+  // const defaultValue = dayjs(formattedDate);
+  // const getModalContainer = () => {
+  //   const modalElement = document.getElementById('modal-datepicker');
+  //   return modalElement ? modalElement : document.body;
+  // };
 
 
   interface ApplyLeave {
@@ -214,6 +214,7 @@ const handleFeesInputChange = (
   
     const fetchBoathOptions = async () => {
       setLoading(true)
+      console.log(loading?"":"")
       try {
   
         const [feesGroup, feesType] = await Promise.all([allFeesGroupName(), allFeesTypeName()])
@@ -401,7 +402,7 @@ const handleFeesInputChange = (
                               : null
                           }
                           placeholder="Select Date"
-                          onChange={(date, dateString) =>
+                          onChange={(dateString) =>
                             handleFeesDateChange("collectionDate", Array.isArray(dateString) ? dateString[0] : dateString)
                           }
 
@@ -625,7 +626,7 @@ const handleFeesInputChange = (
                             }
                             placeholder="Select Date"
 
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleDateChange("leave_date", Array.isArray(dateString) ? dateString[0] : dateString)
                             }
 
@@ -658,7 +659,7 @@ const handleFeesInputChange = (
                             }
                             placeholder="Select Date"
 
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleDateChange("from_date", Array.isArray(dateString) ? dateString[0] : dateString)
                             }
 
@@ -682,7 +683,7 @@ const handleFeesInputChange = (
                             }
                             placeholder="Select Date"
 
-                            onChange={(date, dateString) =>
+                            onChange={(dateString) =>
                               handleDateChange("to_date", Array.isArray(dateString) ? dateString[0] : dateString)
                             }
 

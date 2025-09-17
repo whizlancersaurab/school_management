@@ -4,7 +4,7 @@ import { all_routes } from "../../../router/all_routes";
 import StudentModals from "../studentModals";
 import StudentSidebar from "./studentSidebar";
 import StudentBreadcrumb from "./studentBreadcrumb";
-import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
+// import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
 import { useEffect, useState } from "react";
 import { getStuIssueBookData, Imageurl, specificStudentData1 } from "../../../../service/api";
 import { Skeleton } from "antd";

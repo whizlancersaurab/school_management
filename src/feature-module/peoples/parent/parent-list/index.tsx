@@ -3,7 +3,7 @@ import ParentModal from "../parentModal";
 import { all_routes } from "../../../router/all_routes";
 import { Link } from "react-router-dom";
 import { Modal } from "react-bootstrap";
-import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
+// import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
 import CommonSelect from "../../../../core/common/commonSelect";
 import {

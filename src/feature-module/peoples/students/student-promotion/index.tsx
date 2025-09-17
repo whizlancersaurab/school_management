@@ -104,6 +104,7 @@ const StudentPromotion = () => {
               options={promotion}
               // defaultValue={promotion[res]}
             />
+            {res?"":""}
           </div>
         </>
       ),

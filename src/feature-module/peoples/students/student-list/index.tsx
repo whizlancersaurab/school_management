@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { all_routes } from "../../../router/all_routes";
-import { Studentlist } from "../../../../core/data/json/studentList";
+// import { Studentlist } from "../../../../core/data/json/studentList";
 import type { TableData } from "../../../../core/data/interface";
-import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
+// import ImageWithBasePath from "../../../../core/common/imageWithBasePath";
 import StudentModals from "../studentModals";
 import Table from "../../../../core/common/dataTable/index";
 import PredefinedDateRanges from "../../../../core/common/datePicker";
 import {
-  AdmissionNo,
+  // AdmissionNo,
   allClass,
   allSection,
   gender,
@@ -18,11 +18,11 @@ import {
 import CommonSelect from "../../../../core/common/commonSelect";
 import TooltipOption from "../../../../core/common/tooltipOption";
 import { allStudents, Imageurl } from "../../../../service/api";
-import { findNonSerializableValue } from "@reduxjs/toolkit";
+// import { findNonSerializableValue } from "@reduxjs/toolkit";
 
 const StudentList = () => {
   const routes = all_routes;
-  const data = Studentlist;
+  // const data = Studentlist;
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
 
   const handleApplyClick = () => {
@@ -166,7 +166,7 @@ const StudentList = () => {
     {
       title: "Action",
       dataIndex: "action",
-      render: (action:any , record:any) => (
+      render: (record:any) => (
         <>
           <div className="d-flex align-items-center">
             <Link

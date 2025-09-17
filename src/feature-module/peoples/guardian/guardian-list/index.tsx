@@ -257,7 +257,7 @@ const GuardianList = () => {
                     onClick={() =>  fetchSpecficGuardianData(record.id)}
                   >
                     <i className="ti ti-menu me-2" />
-                    View Guardian
+                    View Guardian{text?"":""}
                   </Link>
                 </li>
                 <li>

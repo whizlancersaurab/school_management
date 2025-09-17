@@ -306,6 +306,7 @@ const StudentDetails = () => {
                               </span>
                               <div>
                                 <span className="text-dark fw-medium mb-1">
+                                  {item?"":""}
                                   <Skeleton.Input active size="small" style={{ width: 100 }} />
                                 </span>
                                 <span> <Skeleton.Input active size="small" style={{ width: 180 }} /></span>
@@ -361,6 +362,7 @@ const StudentDetails = () => {
                               <div className="col-md-6">
                                 <div className="mb-3">
                                   <span className="text-dark fw-medium mb-1">
+                                     {item?"":""}
                                     <Skeleton.Input active style={{ width: 60 }} />
                                   </span>
                                   <span> <Skeleton.Input active style={{ width: 180 }} /></span>
@@ -407,6 +409,7 @@ const StudentDetails = () => {
                             Array(3).fill(0).map((item) => (
                               <div className="col-md-4">
                                 <div className="mb-3">
+                                   {item?"":""}
                                   <span className="text-dark fw-medium mb-1"><Skeleton.Input active style={{ width: 60 }} /></span>
                                   <span> <Skeleton.Input active style={{ width: 100 }} /></span>
                                 </div>
@@ -454,6 +457,7 @@ const StudentDetails = () => {
                                <div className="col-md-6">
                                 <div className="mb-3">
                                   <span className="fw-medium mb-1">
+                                     {item?"":""}
                                     <Skeleton.Input active style={{ width: 60 }} />
                                   </span>
                                   <span className="  "><Skeleton.Input active style={{ width: 100 }} /></span>

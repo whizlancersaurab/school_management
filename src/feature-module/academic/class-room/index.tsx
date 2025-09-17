@@ -104,9 +104,9 @@ const ClassRoom = () => {
     }
   };
 
-  interface ClassList {
+  // interface ClassList {
 
-  }
+  // }
  
   return (
     <div>

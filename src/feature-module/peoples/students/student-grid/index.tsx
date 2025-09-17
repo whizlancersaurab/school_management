@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { all_routes } from '../../../router/all_routes'
-import ImageWithBasePath from '../../../../core/common/imageWithBasePath'
+// import ImageWithBasePath from '../../../../core/common/imageWithBasePath'
 import { allClass, allSection, gender, names, status } from '../../../../core/common/selectoption/selectoption'
-import StudentModals from '../studentModals'
+// import StudentModals from '../studentModals'
 import CommonSelect from '../../../../core/common/commonSelect'
 import TooltipOption from '../../../../core/common/tooltipOption'
 import PredefinedDateRanges from '../../../../core/common/datePicker'
 import { allStudents, Imageurl } from '../../../../service/api'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import StudentModals from '../studentModals'
 
 const StudentGrid = () => {
   const routes = all_routes
@@ -473,7 +474,7 @@ const StudentGrid = () => {
         </div>
       </div>
       {/* /Delete Modal */}
-      {/* <StudentModals /> */}
+      <StudentModals onAdd={()=>{}} rollnum={0}  />
     </>
 
   )

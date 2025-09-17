@@ -7,7 +7,7 @@ import StudentBreadcrumb from "./studentBreadcrumb";
 import Table from "../../../../core/common/dataTable/index";
 import type { TableData } from "../../../../core/data/interface";
 // import { leaveData } from "../../../../core/data/json/leaveData";
-import { Attendance } from "../../../../core/data/json/attendance";
+// import { Attendance } from "../../../../core/data/json/attendance";
 import { useEffect, useState } from "react";
 import { getLeaveData, getStuAttendanceData, specificStudentData1 } from "../../../../service/api";
 import dayjs from "dayjs";
@@ -17,7 +17,7 @@ import { toast } from "react-toastify";
 const StudentLeaves = () => {
   const routes = all_routes;
   // const data = leaveData;
-  const data2 = Attendance;
+  // const data2 = Attendance;
 
   interface LeaveInform {
     id: number;

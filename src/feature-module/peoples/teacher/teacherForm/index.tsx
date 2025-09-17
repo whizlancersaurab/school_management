@@ -26,7 +26,7 @@ import CommonSelect from "../../../../core/common/commonSelect";
 import { useLocation } from "react-router-dom";
 import TagInput from "../../../../core/common/Taginput";
 import { toast } from "react-toastify";
-import { addTeacher, deleteFile, deleteTeacherFile, uploadTeacherFile } from "../../../../service/api";
+import { addTeacher, deleteTeacherFile, uploadTeacherFile } from "../../../../service/api";
 
 const TeacherForm = () => {
   const routes = all_routes;
@@ -54,7 +54,7 @@ const TeacherForm = () => {
     }
   }, [location.pathname]);
 
-
+console.log(defaultDate?"":"")
   interface TeacherData {
 
     first_name: string;
@@ -285,6 +285,7 @@ const TeacherForm = () => {
     date: dayjs.Dayjs | null,
     dateString: string
   ) => {
+    console.log(date?"":"")
     setTeacherData((prev) => ({ ...prev, [name]: dateString }));
   };
 

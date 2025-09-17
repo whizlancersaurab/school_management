@@ -337,7 +337,7 @@ const AddStudent = () => {
   // Handle for DatePicker
   const handleDateChange = (
     name: keyof StudentData,
-    date: dayjs.Dayjs | null,
+    // date: dayjs.Dayjs | null,
     dateString: string
   ) => {
     setStudentData((prev) => ({ ...prev, [name]: dateString }));
@@ -654,8 +654,8 @@ const AddStudent = () => {
                               }
                               placeholder="Select Date"
 
-                              onChange={(date, dateString) =>
-                                handleDateChange("admissiondate", date, Array.isArray(dateString) ? dateString[0] : dateString)
+                              onChange={(dateString) =>
+                                handleDateChange("admissiondate", Array.isArray(dateString) ? dateString[0] : dateString)
                               }
 
                             />
@@ -776,8 +776,8 @@ const AddStudent = () => {
                                   : null
                               }
                               placeholder="Select Date"
-                              onChange={(date, dateString) =>
-                                handleDateChange("dob", date, Array.isArray(dateString) ? dateString[0] : dateString)
+                              onChange={(dateString) =>
+                                handleDateChange("dob",Array.isArray(dateString) ? dateString[0] : dateString)
                               }
 
                             />

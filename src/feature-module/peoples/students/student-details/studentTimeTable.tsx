@@ -1,5 +1,5 @@
 
-import { Await, Link, useParams } from 'react-router-dom'
+import {Link, useParams } from 'react-router-dom'
 import ImageWithBasePath from '../../../../core/common/imageWithBasePath'
 import { all_routes } from '../../../router/all_routes'
 import StudentModals from '../studentModals'
