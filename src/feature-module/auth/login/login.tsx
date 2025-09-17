@@ -206,7 +206,7 @@ const Login = () => {
                   <div>
                     <div className=" mx-auto mb-5 text-center">
                       <ImageWithBasePath
-                        src="assets/img/authentication/authentication-logo.sv"
+                        src="assets/img/authentication/authentication-logo.svg"
                         className="img-fluid"
                         alt="Logo"
                       />
