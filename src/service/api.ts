@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl: string = '/api'
+const baseUrl: string = 'https://school-management-crm-l2um.onrender.com/api'
 export const Imageurl = `https://school-management-crm-l2um.onrender.com/api/stu/uploads/image/`
 export const Documenturl = `https://school-management-crm-l2um.onrender.com/api/stu/uploads/document/`
 
